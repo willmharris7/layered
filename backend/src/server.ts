@@ -61,4 +61,4 @@ app.post('/api/bedrooms', async function (req: Request, res: Response) {
   res.send({ express: top5ListingsNamesBedrooms })
 })
 
-module.exports = app
+export default app

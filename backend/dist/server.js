@@ -54,7 +54,7 @@ app.get('/api/hello', function (req, res) {
     res.send({ express: 'Hello From Express' });
 });
 app.post('/api/world', function (req, res) {
-    res.send("I received your POST request. This is what you sent me: " + Object.values(req.body)[0]);
+    res.send({ express: "I received your POST request. This is what you sent me: " + Object.values(req.body)[0] });
 });
 // Test endpoints //
 app.get('/api/dbs', function (req, res) {
@@ -141,4 +141,4 @@ app.post('/api/bedrooms', function (req, res) {
         });
     });
 });
-module.exports = app;
+exports.default = app;
