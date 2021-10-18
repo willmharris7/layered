@@ -39,9 +39,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// const express = require('express')
 var express_1 = __importDefault(require("express"));
-var helmet_1 = __importDefault(require("helmet"));
+var helmet_1 = __importDefault(require("helmet")); // security headers 
 var MongoClient = require('mongodb').MongoClient;
 var app = (0, express_1.default)();
 var uri = "mongodb+srv://first_test_user:im7p9hcVdHo5aS@cluster0.1m63c.mongodb.net/test?retryWrites=true&w=majority";

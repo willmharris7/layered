@@ -15,12 +15,8 @@ app.get('/api/hello', (req: Request, res: Response) => {
 })
 
 app.post('/api/world', (req: Request, res: Response) => {
-  res.send(`I received your POST request. This is what you sent me: ${Object.values(req.body)[0]}`)
+  res.send({express: `I received your POST request. This is what you sent me: ${Object.values(req.body)[0]}`})
 })
-
-app.get('/test', async (req, res) => {
-    res.json({message: 'pass!'})
-  })
 // Test endpoints //
 
 app.get('/api/dbs', async function (req: Request, res: Response) {
