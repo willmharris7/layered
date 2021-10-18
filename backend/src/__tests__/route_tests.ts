@@ -1,6 +1,6 @@
-const appTest = require('../server') // Link to your server file
+import app from '../server'
 const supertest = require('supertest')
-const request = supertest(appTest)
+const request = supertest(app)
 
 
 describe('Test endpoints', function() {

@@ -1,6 +1,6 @@
 import express, { Express, Request, Response } from 'express'
 import helmet from 'helmet'; // security headers 
-const {MongoClient} = require('mongodb')
+import {MongoClient} from 'mongodb'
 const app: Express = express()
 const uri = "mongodb+srv://first_test_user:im7p9hcVdHo5aS@cluster0.1m63c.mongodb.net/test?retryWrites=true&w=majority"
 const client = new MongoClient(uri)
