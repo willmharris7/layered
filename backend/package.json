@@ -9,7 +9,7 @@
     "serve": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/start.js\"",
     "prestart": "npm run build",
     "start": "cross-env NODE_ENV=production node dist/start.js",
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "author": "Will Harris",
   "license": "ISC",
